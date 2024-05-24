@@ -1,11 +1,13 @@
 ## Existing Metrics
 {:#existingmetrics}
 
-Currently, LTQP performance is primarily measured with three metrics. First, is the total execution time of a query. While this is an important metric to track, link prioritization algorithms are unlikely to improve it [](cite:cites hartig2016walking), as finishing a query requires all documents to be dereferenced. Second, the literature uses first $$ k $$ result arrival times [](cite:cites taelman2023link), which, as discussed in the introduction, can likely be improved by link prioritization algorithms. Finally, [diefficiency metrics](cite:cites acosta2017diefficiency) can be used to measure the continuous efficiency of query engines.
+Currently, LTQP performance is primarily measured using three metrics. 
+The first is the total execution time of a query. While this is an important metric, link prioritization algorithms are unlikely to improve [it](cite:cites hartig2016walking), as completing a query requires dereferencing all documents. 
+The second metric is the arrival times of the first $$ k $$ results, which, as discussed in the introduction, can potentially be improved by link prioritization algorithms.
+Finally, [diefficiency metrics](cite:cites acosta2017diefficiency) can be used to measure the continuous efficiency of query engines during query execution.
 
-The previously mentioned metrics are important to measure the entire system performance.
-By adding the proposed metric of this paper to the metric toolkit, researchers can accuractely measure the performance of the whole system, and  the link prioritization part of their system seperately.
-
+These existing metrics are essential for evaluating the overall performance of the system. 
+By introducing the proposed metric in this paper, researchers can more accurately measure both the performance of the entire system and the specific contribution of link prioritization algorithms.
 <!-- 1. Talk about existing metrics used for comparison (short)
     1. Total execution time
     2. Diefficiency
