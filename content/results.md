@@ -1,6 +1,6 @@
 ## Results
 {:#Results}
-TODO
+TODO <span class="comment" data-author="RT">:-(</span>
 
 <figure id="figure-main">
 
@@ -23,6 +23,8 @@ Two figures
 </figcaption>
 </figure>
 
+<span class="comment" data-author="RT">Figures need a legend for explaining the colors, and descriptions</span>
+
 |      |      D1 |       D2 |       D3 |      D4 |      D5 |      D6 |      D7 |      D8 |
 |:-----|--------:|---------:|---------:|--------:|--------:|--------:|--------:|--------:|
 | mean | 3.05714 | 1.88286  | 1.48188  | 11.4157 | 8.56275 | 3.16885 | 9.8     | 1.43302 |
@@ -32,6 +34,10 @@ Two figures
 |:-----|--------:|---------:|---------:|--------:|---------:|--------:|--------:|---------:|
 | mean | 4.82857 | 1.57624  | 1.49423  | 12.4213 |  9.22745 | 3.33612 | 12.8667 | 0.980952 |
 | std  | 4.42827 | 0.295887 | 0.393644 | 11.2035 | 10.291   | 2.14421 | 11.643  | 0.905814 |
+
+<span class="comment" data-author="RT">What are the two tables about?</span>
+
+<span class="comment" data-author="RT">Are the following enumeration todo's?</span>
 
 1. Computed metric for depth first vs FIFO link prioritisation (possibly with time to compute the metric?)
 2. Timing of the two methods to compare correlation between metric and execution time
