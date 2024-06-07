@@ -3,11 +3,21 @@
 
 Currently, LTQP performance is evaluated using several metrics:
 
+{:.comment data-author="BET"} (1) It seems to me that you argue a bit of the contrary in the introduction "This downside also holds for other execution time-based metrics" maybe the language can be soften here or specify that it is good for evaluation with the same condition.
+
 1. Total query execution time: While important, traversal strategies are unlikely to improve total query execution time significantly, as completing a query requires dereferencing all documents if the traversal strategy does not involve pruning links[](cite:cites hartig2016walking). However, it is an effective metric for total LTQP engine performance.
+
+{:.comment data-author="BET"}  (2)  The comment seems to not fully in line with the purpose of presenting those metrics, I think it should be more of a why it is good or bad instead of if we can optimize it.
 
 2. Arrival times of the first $$ k $$ results: As discussed in the introduction, link prioritization algorithms can potentially improve this metric.
 
-3. Diefficiency Metrics: These measure the continuous efficiency of query engines by reflecting the density of produced results over a given time interval[](cite:cites acosta2017diefficiency). 
+{:.comment data-author="BET"}  (3) It seems like you should critique it a bit here. I know you do it in the intro, but it feels weird a bit
+to me to have it here with no comments.
+
+3. Diefficiency Metrics: These measure the continuous efficiency of query engines by reflecting the density of produced results over a given time interval[](cite:cites acosta2017diefficiency).
+ 
+{:.comment data-author="BET"} Maybe it is not important but I feel like the completeness of results is missing particularly if we present
+fewer HTTP requests as a direct good.
 
 4. Number of HTTP Requests: This measures the efficiency of an engine at retrieving only relevant data. Fewer HTTP requests to achieve the same results indicate effective pruning.
 
