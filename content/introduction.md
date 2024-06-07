@@ -1,7 +1,7 @@
 ## Introduction
 {:#introduction}
 
-Currently, web user data is stored in centralized data silos, restricting innovation [1]. 
+Currently, web user data is stored in centralized data silos, restricting innovation[](cite:cites Verborgh_2020).
 Rather than storing all user data of a single application in a single location, decentralization efforts, like Solid, adopt an approach that spreads data into smaller stores at different locations.
 
 {:.comment data-author="BET"} In a way, it is not fully true because large databases are fragmented and reproduced in multiple locations to improve the latency. For sure they are larger than Solid pod, but I think it is the personal nature of pods that makes the real difference
