@@ -1,7 +1,7 @@
 ## Introduction
 {:#introduction}
 
-Currently, web user data is stored in centralized data silos, restricting innovation [1]. 
+Currently, web user data is stored in centralized data silos, restricting innovation[](cite:cites Verborgh_2020). 
 Rather than storing all user data of a single application in a single location, decentralization efforts, like Solid, adopt an approach that spreads data into smaller stores at different locations.
 When applications intend to use decentralized data, querying approaches capable of handling numerous small, decentralized data stores are required. 
 Additionally, as these vaults may contain sensitive data, querying must support fine-grained access control.
