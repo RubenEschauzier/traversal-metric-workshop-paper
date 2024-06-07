@@ -46,4 +46,4 @@ Our experiments will compare [depth-first traversal and breadth-first traversal]
 To compute the optimal path, we will use a [heuristic Steiner tree solver](cite:cites watel2016practical) to speed up computations. Although an exact solver would be ideal, it would significantly increase the computational complexity.
 
 
-{:.comment data-author="BET"} I think information about the theoretical complexity should be provided here and maybe mention notable optimization or information about the reliability of the results. The complexity may be in the definition.
+{:.comment data-author="BET"} I think information about the theoretical complexity should be provided here and maybe mention notable optimization or information about the reliability of the results with the heuristic approach. The complexity may be in the definition.
