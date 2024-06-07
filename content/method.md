@@ -31,6 +31,8 @@ In this definition, a lower value is better, with $$ \phi_{optimal} = 1 $$ indic
 To compute the metric, we first track the traversed topology of the queried web and convert it into a directed graph. Furthermore, for each query, we compute the minimal set of documents required to produce the query result. 
 Finally, the engine's traversal path must be tracked, either within the engine or by recording the HTTP requests made by the engine.
 
+{:.comment data-author="BET"} to do that do we need to parsed the knowledge graph dataset into a topology graph? Or we perform queries? What if the
+method prune too much data sources?
 
 ### Experimental Set-up
 {:##experiment}
