@@ -11,10 +11,11 @@ Additionally, examining the Pearson Correlation Coefficient between the TPM valu
 
 This weak correlation, along with the minimal impact of better TPM on execution time, supports the hypothesis that SolidBench Discover queries do not benefit from traversal strategy optimization due to execution being limited by suboptimal query plans [](cite:cites eschauzier2023does).
 
-{:.comment data-author="BET"} Maybe a mention of the results from hartig2016walking should be made. If it fits the conclusion of that paper
-since the two traversal approaches were taken from those and from what I understood the paper only measured it with time but the conclusion should be inline with yours since the comparaison is in the same environement.
+{:.comment data-author="BET"} Maybe a mention of the results from hartig2016walking should be made. 
+If the result of the metric are in adequation with its findings.
+Since the two traversal approaches were taken from this paper and from.
 
-{:.comment data-author="BET"} Maybe the times it takes to compute those metric could be interesting, just to give an idea if it is something that you can have on the fly or you must wait a long time to get it, I guess with information about the size of the dataset to put more into perspective.
+{:.comment data-author="BET"} Maybe the times it takes to compute those metric could be interesting, just to give an idea if it is something that you can have on the fly or you must wait a long time to get it, I guess with information about the size of the dataset to put more things into perspective.
 Can you provide the source code of the experiment?
 
 <figure id="figure-main">
