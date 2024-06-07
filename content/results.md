@@ -1,13 +1,21 @@
 ## Results
 {:#Results}
+
+{:.comment data-author="BET"} I think the name of the metric should have been introduced earlier.
+
 The differences in computed traversal performance metrics (TPMs) for both depth-first and breadth-first traversal are shown in [](#figure-main).
 The figure shows that depth-first traversal outperforms breadth-first traversal in algorithmic performance.
 
 However, this trend is not observed when comparing the time until the last query result. 
 Additionally, examining the Pearson Correlation Coefficient between the TPM value and the time until the last query result for each traversal strategy reveals a weak negative correlation: -0.156 for breadth-first and -0.175 for depth-first.
 
-This weak correlation, along with the minimal impact of better TPM on execution time, supports the hypothesis that SolidBench Discover queries do not benefit from traversal strategy optimization due to execution being limited by suboptimal query plans [](cite
-eschauzier2023does).
+This weak correlation, along with the minimal impact of better TPM on execution time, supports the hypothesis that SolidBench Discover queries do not benefit from traversal strategy optimization due to execution being limited by suboptimal query plans [](cite:cites eschauzier2023does).
+
+{:.comment data-author="BET"} Maybe a mention of the results from hartig2016walking should be made. If it fits the conclusion of that paper
+since the two traversal approaches were taken from those and from what I understood the paper only measured it with time but the conclusion should be inline with yours since the comparaison is in the same environement.
+
+{:.comment data-author="BET"} Maybe the times it takes to compute those metric could be interesting, just to give an idea if it is something that you can have on the fly or you must wait a long time to get it, I guess with information about the size of the dataset to put more into perspective.
+Can you provide the source code of the experiment?
 
 <figure id="figure-main">
 <img src="figures/metric_difference.svg">
