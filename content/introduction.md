@@ -27,3 +27,7 @@ In short, measuring the marginal effect of traversal strategies is challenging.
 In comparison, we can measure the marginal effectiveness of join planning relatively easily by counting the number of intermediate results produced by the engine. 
 The goal of this paper is to introduce a metric that enables straightforward observation of the algorithmic performance of traversal approaches, independent of implementation details. 
 This leads to our research question: _How to compare the marginal algorithmic performance of traversal strategies in an implementation-agnostic manner?_
+
+<span class="comment" data-author="RT">Good introduction, but I wonder if the primary focus on comparability is the best main motivation for the metric. Maybe it would be better to focus the story on measuring how far the traversal path is from the optimal path. How much better can we get with different traversal paths?</span>
+
+<span class="comment" data-author="RT">I would suggest introducing the name of the term here in the introduction already. Not sure about the current name (Optimal Traversal Metric) though. What about something like "Shortest Traversal Length Ratio (STLR)"?</span>

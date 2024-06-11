@@ -6,8 +6,10 @@ The figure shows that depth-first traversal outperforms breadth-first traversal 
 However, this trend is not observed when comparing the time until the last query result. 
 Additionally, examining the Pearson Correlation Coefficient between the TPM value and the time until the last query result for each traversal strategy reveals a weak negative correlation: -0.156 for breadth-first and -0.175 for depth-first.
 
-This weak correlation, along with the minimal impact of better TPM on execution time, supports the hypothesis that SolidBench Discover queries do not benefit from traversal strategy optimization due to execution being limited by suboptimal query plans [](cite
+This weak correlation, along with the minimal impact of better TPM on execution time, supports the hypothesis <span class="comment" data-author="RT">Make sure to cite this hypothesis</span> that SolidBench Discover queries do not benefit from traversal strategy optimization due to execution being limited by suboptimal query plans [](cite
 eschauzier2023does).
+
+<span class="comment" data-author="RT">Reminder for table with actual metric results.</span>
 
 <figure id="figure-main">
 <img src="figures/metric_difference.svg">
