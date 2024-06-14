@@ -40,12 +40,17 @@ Finally, the engine's traversal path must be tracked, either within the engine o
 
 ### Experimental Set-up
 {:#experiment}
-<span class="comment" data-author="RV">Move this subsection to the next section.</span>
+<span class="comment" data-author="RV">Move this subsection to the next section. It's part of the experiments of one validation of the metric; not a part of its definition.</span>
 
-For our experiments, we will use the [SolidBench benchmark](citetaelman2023link) to test our link prioritization metric. 
-We will use the Discover queries from SolidBench, as these often produce results without timing out, which is necessary for computing our metric.
+Our experiments use the [SolidBench benchmark](citetaelman2023link) to test our link prioritization metric. 
+<span class="comment" data-author="RV">Give the metric a name in the previous section, so 1) we don't have to keep calling it <q>our link prioritization metric</q>, 2) so others can use that name later.</span>
+We focus on the Discover queries from SolidBench, as these often produce results without timing out, a necessary precondition for our metric.
+<span class="comment" data-author="RV">This property should be mentioned as a limitation at the end of the paper.</span>
+We extended the modular query engine [Comunica](citetaelman2018comunica)
+to track the required information for computing the metric during query execution.
+Our experiments compare [depth-first traversal and breadth-first traversal](cite:cites hartig2016walking) using the optimal traversal metric and time until the final query result.
+<span class="comment" data-author="RV">Yes, really give the metric a name. It gets awkward at this point.</span>
+We use a [heuristic Steiner tree solver](citewatel2016practical) to speed up optimal path computation; although an exact solver would be ideal, it significantly increases computational complexity.
+<span class="comment" data-author="RV">How much? Did we try? Is this a limitation of our proposal that we must mention at the end?</span>
 
-To track the required information for computing the metric during query execution, we use the modular query engine [Comunica](citetaelman2018comunica).
-Our experiments will compare [depth-first traversal and breadth-first traversal](cite:cites hartig2016walking) using the optimal traversal metric and time until the final query result.
-
-To compute the optimal path, we will use a [heuristic Steiner tree solver](citewatel2016practical) to speed up computations. Although an exact solver would be ideal, it would significantly increase the computational complexity.
+<span class="comment" data-author="RV">Yes, baptize it the RRR metric after it's authors 😂</span>
