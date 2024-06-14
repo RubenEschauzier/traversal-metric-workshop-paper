@@ -1,6 +1,9 @@
 ## Results
 {:#Results}
 [](#figure-main) shows that depth-first traversal outperforms breadth-first traversal in algorithmic performance using the computed traversal performance metrics (TPMs).
+<span class="comment" data-author="RV">But actually, it does not! It doesn't show anything about the algorithms. It should show something about our metric.</span>
+
+<ins class="comment" data-author="RV">[](#figure-main) shows that our metric-with-a-new-fancy-name confirms the findings observed by existing-but-more-cumbersome-metric.</ins>
 
 However, this trend is not observed when comparing the time until the last query result. 
 <span class="comment" data-author="RV">Are we observing the opposite trend? Or no such trend at all?</span>

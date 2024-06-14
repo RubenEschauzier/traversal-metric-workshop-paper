@@ -42,6 +42,8 @@ Finally, the engine's traversal path must be tracked, either within the engine o
 {:#experiment}
 <span class="comment" data-author="RV">Move this subsection to the next section. It's part of the experiments of one validation of the metric; not a part of its definition.</span>
 
+<span class="comment" data-author="RV">See comments inclusion for what comes next. We are testing the metric here, not an old hypothesis.</span>
+
 Our experiments use the [SolidBench benchmark](citetaelman2023link) to test our link prioritization metric. 
 <span class="comment" data-author="RV">Give the metric a name in the previous section, so 1) we don't have to keep calling it <q>our link prioritization metric</q>, 2) so others can use that name later.</span>
 We focus on the Discover queries from SolidBench, as these often produce results without timing out, a necessary precondition for our metric.
