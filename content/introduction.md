@@ -23,6 +23,8 @@ For example, an application can quickly present the first few query results, whi
 5) Here's how those techniques work.
 </span>
 
+<span class="todo" data-author="RV">Describe very clearly what a <q>traversal strategy</q> is, and how it differ from other factors. Should be clear: what's in, what's out.</span>
+
 <span class="comment" data-author="RV">Swap the order of sentences in the next para. Start with the conclusion: we can't measure things. Then elaborate why (shortcomings of existing approaches).</span>
 [Previous work](cite:cites taelman2023link, hartig2016walking) has utilized result arrival times and total execution time to assess the performance of different traversal strategies. 
 While this approach is sufficient when comparing traversal strategies within the same engine and environment, it falls short when comparing different engine implementations and environments.
@@ -32,9 +34,14 @@ This downside also holds for other execution time-based metrics, like [diefficie
 <ins class="comment" data-author="RV">Actual traversal-related performance changes are obscured by these unrelated differences that may skew results:</ins>
 
 
-1. _Programming Languages:_ Different languages can substantially affect engine [performance](cite:cites fourment2008comparison), hindering pure time-based comparisons of algorithms.
-1. _Dereferencing Overhead:_ Network times [vary widely](cite:cites christiansen2000tuning, kobayashi2002analysis), introducing significant noise into execution times, even for comparisons of the same engine.
-1. _Orthogonal Optimization Strategies:_ Different [query optimization](cite:cites hartig2011zero) strategies might create differences independent of traversal factors. 
+Programming Languages
+: Different languages can substantially affect engine [performance](cite:cites fourment2008comparison), hindering pure time-based comparisons of algorithms.
+
+Dereferencing Overhead
+: Network times [vary widely](cite:cites christiansen2000tuning, kobayashi2002analysis), introducing significant noise into execution times, even for comparisons of the same engine.
+
+Orthogonal Optimization Strategies
+: Different [query optimization](cite:cites hartig2011zero) strategies might create differences independent of traversal factors. 
 
 <del class="comment" data-author="RV">In short, measuring the marginal effect of traversal strategies is challenging. </del>
 <span class="comment" data-author="RV">We just made that point.</span>
@@ -46,5 +53,5 @@ the marginal effectiveness of join planning.
 In this paper, we introduce a metric that enables straightforward observation of the algorithmic performance of traversal approaches, independent of implementations. 
 This leads to our research question: _How to compare the marginal algorithmic performance of traversal strategies in an implementation-agnostic manner?_
 <span class="comment" data-author="RV">Really good to end on this question. Makes for a suggested title:
-<q>Implementation-agnostic performance comparison of traversal-based query processing</q>
+<q>Implementation-agnostic performance comparison of traversal strategies</q>
 </span>
