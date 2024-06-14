@@ -11,8 +11,6 @@ Currently, LTQP performance is evaluated using several metrics:
 
 4. Number of HTTP Requests: This measures the efficiency of an engine at retrieving only relevant data. Fewer HTTP requests to achieve the same results indicate effective pruning.
 
-<span class="comment" data-author="RT">For arrival times of first k results and diefficiency, let's also explain why having the first few results early is in practise valuable. (interactive end-user apps can already start showing results)</span>
-
 These existing metrics are essential for evaluating the overall performance of the entire system. The metric this paper proposes is complementary to the existing metrics. The proposed metric will allow researchers to accurately measure the system's overall performance and the specific contribution of link prioritization algorithms.
 
 
