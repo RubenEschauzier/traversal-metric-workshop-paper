@@ -71,6 +71,13 @@ Don't.
 This is challenging because computing the optimal path for $$ k $$ results requires solving Steiner trees for all combinations of size $$ k $$ out of $$ n $$, where $$ n $$ is the total number of results.
 Second, <del class="comment" data-author="RV">we will</del> <ins class="comment" data-author="RV">somebody else can create a new metric to</ins> incorporate a penalty term for documents with long HTTP request times to account for real-world uncertainties in LTQP scenarios. 
 Finally, <del class="comment" data-author="RV">we will</del> <ins class="comment" data-author="RV">as a result of our work, anybody can now</ins> conduct more extensive benchmarks and provide easy-to-use code repositories to reproduce and utilize the introduced metrics.
+<span class="comment" data-author="RT">Explain why that is (they are selective). I'd also make explicit here that in future work you will look into less selective queries, and say what you expect to see there.</span>
+
+To improve the metric, we plan several extensions. 
+First, we will include a metric <span class="comment" data-author="RT">But this would not be an extension to the metric, but a new metric, right?</span> for the first $$ k $$ results, defined as the ratio between the length of the path the engine takes to dereference the documents for $$ k $$ results and the optimal path to dereference $$ k $$ results. 
+This is challenging because computing the optimal path for $$ k $$ results requires solving Steiner trees for all combinations of size $$ k $$ out of $$ n $$, where $$ n $$ is the total number of results.
+Second, we will incorporate a penalty term for documents with long HTTP request times to account for real-world uncertainties in LTQP scenarios. 
+Finally, we will conduct more extensive benchmarks and provide reusable tools to reproduce and utilize the introduced metrics.
 
 <div style="page-break-after: always; visibility: hidden"> 
 \pagebreak 

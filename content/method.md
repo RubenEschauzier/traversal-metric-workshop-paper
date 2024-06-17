@@ -14,6 +14,8 @@ The optimal traversal path is defined as the shortest path needed to dereference
 
 The subweb traversed during LTQP can be represented as a directed graph, where an edge from document A to document B indicates that a URI pointing to document B was <ins class="comment" data-author="RV">first</ins> found in the data obtained from document A. 
 Finding the shortest path to dereference all query-relevant documents in this graph is equivalent to solving a [directed Steiner tree problem](cite
+The web traversed during LTQP can be represented as a directed graph, where an edge from document A to document B indicates that a URI pointing to document B was found in the data obtained from document A. 
+Finding the shortest path to dereference all query-relevant documents in this graph is equivalent to solving a [directed Steiner tree problem](cite:cites 
 zosin2002directed), with the query-relevant documents serving as terminals.
 
 The traversal path taken by the engine is defined as the sequence of documents dereferenced by the engine to obtain all necessary documents for the complete query result. 
@@ -42,6 +44,7 @@ Finally, the engine's traversal path must be tracked, either within the engine o
 {:#experiment}
 <span class="comment" data-author="RV">Move this subsection to the next section. It's part of the experiments of one validation of the metric; not a part of its definition.</span>
 
+<<<<<<< HEAD
 <span class="comment" data-author="RV">See comments inclusion for what comes next. We are testing the metric here, not an old hypothesis.</span>
 
 Our experiments use the [SolidBench benchmark](citetaelman2023link) to test our link prioritization metric. 
@@ -56,3 +59,12 @@ We use a [heuristic Steiner tree solver](citewatel2016practical) to speed up opt
 <span class="comment" data-author="RV">How much? Did we try? Is this a limitation of our proposal that we must mention at the end?</span>
 
 <span class="comment" data-author="RV">Yes, baptize it the RRR metric after it's authors 😂</span>
+=======
+For our experiments, we will use the [SolidBench benchmark](cite:cites taelman2023link) to test our link prioritization metric. 
+We will use the Discover queries from SolidBench, as these often produce results without timing out, which is necessary for computing our metric.
+
+To track the required information for computing the metric during query execution, we use the modular query engine [Comunica](cite:cites taelman2018comunica).
+Our experiments will compare [depth-first traversal and breadth-first traversal](cite:cites hartig2016walking) using the optimal traversal metric and time until the final query result.
+
+To compute the optimal path, we will use a [heuristic Steiner tree solver](cite:cites watel2016practical) to speed up computations. Although an exact solver would be ideal, it would significantly increase the computational complexity.
+>>>>>>> master

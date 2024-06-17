@@ -55,3 +55,11 @@ This leads to our research question: _How to compare the marginal algorithmic pe
 <span class="comment" data-author="RV">Really good to end on this question. Makes for a suggested title:
 <q>Implementation-agnostic performance comparison of traversal strategies</q>
 </span>
+In short, measuring the marginal effects of different traversal strategies is difficult. 
+Additionally, current metrics do not reveal how far current traversal methods are from the optimal solution. 
+Consequently, the potential performance improvements from exploring new traversal strategies are unknown and uncertain.
+
+To address this, we propose a new metric: the Shortest Traversal Length Ratio (STLR). 
+STLR allows for the evaluation of traversal strategies by comparing their performance to the optimal traversal path.
+This metric will guide future research by highlighting the potential gains from investigating new traversal strategies. 
+Furthermore, it will allow the comparison of traversal strategies independent of implementation details.
