@@ -1,33 +1,26 @@
 ## Existing Metrics
 {:#existingmetrics}
 
-Currently, LTQP performance is evaluated using several metrics:
+<del class="comment" data-author="RV">Currently, LTQP performance is evaluated using several metrics:</del>
+<span class="comment" data-author="RV">More opinion/information. Be stronger.</span>
+<ins class="comment" data-author="RV">Existing LTQP metrics for implementations are unreliable predictors of when one traversal strategy outperforms another:</ins>
 
-1. Total query execution time: While important, traversal strategies are unlikely to improve total query execution time significantly, as completing a query requires dereferencing all documents if the traversal strategy does not involve pruning links[](cite:cites hartig2016walking). However, it is an effective metric for total LTQP engine performance.
+Total query processing time
+: While important, traversal strategies are unlikely to improve total query execution time significantly, as completing a query requires dereferencing all documents if the traversal strategy does not involve pruning links [](cite:cites hartig2016walking). However, it is an effective metric for total LTQP engine performance.
+<span class="comment" data-author="RV">I don't understand this point; and I now realize this happens because strategy wasn't defined in intro.</span>
 
-2. Arrival times of the first $$ k $$ results: As discussed in the introduction, link prioritization algorithms can potentially improve this metric.
+Arrival times of the first $$ k $$ results
+: As discussed in the introduction, link prioritization algorithms can potentially improve this metric.
+<span class="comment" data-author="RV">Add something new here. Perhaps move content from the intro to here then. Otherwise, this falls flat.</span>
 
-3. Diefficiency Metrics: These measure the continuous efficiency of query engines by reflecting the density of produced results over a given time interval[](cite:cites acosta2017diefficiency). 
+Diefficiency Metrics
+: These measure the continuous efficiency of query engines by reflecting the density of produced results over a given time interval[](cite:cites acosta2017diefficiency). 
+<span class="comment" data-author="RV">As opposed to what? Be clear and specific. Not necessarily with more words.</span>
+<ins class="comment" data-author="RV">Continuous efficiency improves over … by …</ins>
 
-4. Number of HTTP Requests: This measures the efficiency of an engine at retrieving only relevant data. Fewer HTTP requests to achieve the same results indicate effective pruning.
+Number of HTTP Requests
+: <span class="rephrase" data-author="RV">This measures the efficiency of an engine at retrieving only relevant data.</span> <del class="comment" data-author="RV">Fewer HTTP requests to achieve the same results indicate effective pruning.</del>
+<span class="comment" data-author="RV">Say this thing in one sentence, but much more clearly.</span>
 
-These existing metrics are essential for evaluating the overall performance of the entire system. The metric this paper proposes is complementary to the existing metrics. The proposed metric will allow researchers to accurately measure the system's overall performance and the specific contribution of link prioritization algorithms.
-
-
-<!-- 
-Currently, LTQP performance is measured using several metrics. 
-The first is the total execution time of a query. While this is an important metric, traversal strategies are unlikely to improve [it](cite:cites hartig2016walking), as completing a query likely requires dereferencing all documents. 
-An alternative to total execution time is the arrival times of the first $$ k $$ results, which, as discussed in the introduction, can potentially be improved by link prioritization algorithms.
-Similarly, [diefficiency metrics](cite:cites acosta2017diefficiency) can be used to measure the continuous efficiency of query engines during query execution. 
-Diefficiency metrics reflect the density of produced results over given time interval. 
-Finally, the number of HTTP requests measures the efficiency of an engine at retrieving only relevant data. Specifically, if an engine is able to retrieve the same results with less HTTP requests, it indicates effective pruning.
-
-These existing metrics are essential for evaluating the overall performance of the entire system. 
-By introducing the proposed metric in this paper, researchers can more accurately measure both the performance of the entire system and the specific contribution of link prioritization algorithms. -->
-
-
-<!-- 1. Talk about existing metrics used for comparison (short)
-    1. Total execution time
-    2. Diefficiency
-    3. First $$ k $$ result arrival times
-2. Discuss that these metrics are complementary and combining the proposed metric with these metrics will give a clear idea of performance. -->
+<del class="comment" data-author="RV">These existing metrics are essential for evaluating the overall performance of the entire system.</del> The metric this paper proposes is complementary to existing metrics, as it allows researchers to accurately measure <del class="comment" data-author="RV">the system's overall performance and</del> the specific contribution of link prioritization algorithms.
+<span class="comment" data-author="RV">Link this back to <q>strategy</q>. Or keep using <q>prioritization algorithm</q>. But use one term for the thing you aim to measure.</span>
