@@ -23,7 +23,11 @@ Specifically, several aspects complicate performance comparisons:
 These differences can substantially affect engine [performance](cite:cites fourment2008comparison), making it challenging to compare algorithms based solely on execution time.
 3. _Dereferencing Overhead:_ In real-world applications, the time required to dereference links can [vary widely](cite:cites christiansen2000tuning, kobayashi2002analysis). This variability introduces significant noise into query execution times, complicating the comparison of traversal strategies performance even within the same engine.
 
-In short, measuring the marginal effect of traversal strategies is challenging. 
-In comparison, we can measure the marginal effectiveness of join planning relatively easily by counting the number of intermediate results produced by the engine. 
-The goal of this paper is to introduce a metric that enables straightforward observation of the algorithmic performance of traversal approaches, independent of implementation details. 
-This leads to our research question: _How to compare the marginal algorithmic performance of traversal strategies in an implementation-agnostic manner?_
+In short, measuring the marginal effects of different traversal strategies is difficult. 
+Additionally, current metrics do not reveal how far current traversal methods are from the optimal solution. 
+Consequently, the potential performance improvements from exploring new traversal strategies are unknown and uncertain.
+
+To address this, we propose a new metric: the Shortest Traversal Length Ratio (STLR). 
+STLR allows for the evaluation of traversal strategies by comparing their performance to the optimal traversal path.
+This metric will guide future research by highlighting the potential gains from investigating new traversal strategies. 
+Furthermore, it will allow the comparison of traversal strategies independent of implementation details.
