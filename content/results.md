@@ -1,45 +1,17 @@
 ## Results
 {:#Results}
-[](#figure-main) shows that depth-first traversal outperforms breadth-first traversal in algorithmic performance using the computed traversal performance metrics (TPMs).
-<span class="comment" data-author="RV">But actually, it does not! It doesn't show anything about the algorithms. It should show something about our metric.</span>
 
-<ins class="comment" data-author="RV">[](#figure-main) shows that our metric-with-a-new-fancy-name confirms the findings observed by existing-but-more-cumbersome-metric.</ins>
+For our experiments, we will use the Discover queries from the [SolidBench benchmark](cite:cites taelman2023link) to test our STLR metric.
+To track the required information for computing the metric during query execution, we use the modular query engine [Comunica](cite:cites taelman2018comunica).
+To compute the optimal path, we will use a [heuristic Steiner tree solver](cite:cites watel2016practical) to speed up computations. Although an exact solver would be ideal, it could significantly increase the computational complexity for large subwebs [](cite:cites hwang1992steiner, lucas2014ising).
 
-However, this trend is not observed when comparing the time until the last query result. 
-<span class="comment" data-author="RV">Are we observing the opposite trend? Or no such trend at all?</span>
-<ins class="comment" data-author="RV">However, no such trend</ins>
-<ins class="comment" data-author="RV">However, he opposite trend</ins>
-Additionally, examining the Pearson Correlation Coefficient between the TPM value and the time until the last query result for each traversal strategy reveals a weak negative correlation: -0.156 for breadth-first and -0.175 for depth-first.
-This weak correlation, along with the minimal impact of better TPM on execution time, supports the hypothesis that SolidBench Discover queries do not benefit from traversal strategy optimization due to execution being limited by suboptimal query plans [](cite
-eschauzier2023does).
+Our experiments will compare [depth and breadth-first prioritization](cite:cites hartig2016walking) using STLR and time until the final query result.
+We will attempt to validate the substantiated assumption that Discover queries do not benefit from improved link prioritization [](cite:cites eschauzier2023does).
 
-<div class="comment" data-author="RV" markdown=1>
-Much more explicit here!
-
-1. We are going to preliminary investigate whether out metric works.
-1. Let's see if we can confirm _this_ existing hypothesis, which we've already proven using other means, more easily.
-1. Bam, yes, we can!! And it was so easy.
-1. Okay, that's an interesting indication that our metric at least works here.
-   Did we mention it was easy?
-
-That structure is absolutely crucial to make your point.
-</div>
-
-<figure id="figure-main">
-<img src="figures/metric_difference.svg">
-<figcaption markdown="block">
-The difference in the proposed traversal performance metric between depth-first traversal and breadth-first traversal.
-<span class="comment" data-author="RV">Mmm not the figure I expected. This is a paper that defined a metric, and we're not even showing the metric? What are the outcomes of the metric? I'd want to see the scores for each strategy for each query. We MUST use the metric and show its results. It's not a relative metric.</span>
-The computed Shortest Traversal Length Ratio's (STLR) for both depth-first and breadth-first prioritization are shown in [](#metric-results). 
-Addtionally, we show the average difference between the two prioritization strategies.
-The figure shows that depth-first traversal significantly outperforms breadth-first traversal in algorithmic performance on some template instantiations, while showing comparabable performance on others.
+[](#metric-results) shows the computed metrics per template instantiation and the average difference in metric value. We observe that our metric favors depth-first prioritization compared to breadth-first on some query template instantiations. 
 This is likely due to the different fragmentation strategies used in [SolidBench](cite:cites taelman2023link), as some pods store all query-relevant data in a single file, while others fragment these into multiple directories, complicating optimal traversal.
-
-The difference in traversal performance is not observed when comparing the time until the last query result. 
-Examining the Pearson Correlation Coefficient between the STLR value and the time until the last query result for each traversal strategy reveals a weak negative correlation: -0.156 for breadth-first and -0.175 for depth-first.
-
-This weak correlation, along with the minimal impact of better STLR on execution time, supports the hypothesis <span class="comment" data-author="RT">Make sure to cite this hypothesis</span> that SolidBench Discover queries do not benefit from traversal strategy optimization due to execution being limited by suboptimal query plans [](cite
-eschauzier2023does).
+This difference in prioritization performance is not observed in query execution time. In fact, when we examine the <span class="comment" data-author="RE"> RECOMPUTE PEARSON METRIC</span> Pearson Correlation Coefficient between the average STLR and query-execution time of each template we find ....
+Using the STLR, we confirm our previous [paper](cite:cites eschauzier2023does) by computing a metric value, instead of an engine-specific indepth analysis of the query execution progress.
 
 <style>
 table thead {
@@ -284,9 +256,9 @@ caption {
       <td>2.25</td>
       <td>0.00</td>
       <th style="border-bottom: 0">D8.1</th>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
     </tr>
     <tr>
       <th style="border-bottom: 0">D4.2</th>
@@ -304,9 +276,9 @@ caption {
       <td>32.43</td>
       <td>0.00</td>
       <th style="border-bottom: 0">D8.3</th>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
     </tr>
     <tr>
       <th style="border-bottom: 0">D4.4</th>
@@ -322,7 +294,7 @@ caption {
 </table>
 
 <figcaption markdown="block">
-Calculated Shortest Traversal Length Ratio's for depth-first and breadth-first prioritization seperated by query template and instantiation. In this table, **D1.2** denotes the second instantiation of Discover query template 1.
+Calculated Shortest Traversal Length Ratio's for depth and breadth-first prioritization seperated by query template and instantiation. In this table, e.g. **D1.2** denotes the second instantiation of Discover query template 1 and <q>-</q> indicates a query timeout.
 </figcaption>
 
 </figure>

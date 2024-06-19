@@ -1,14 +1,27 @@
 ## Conclusion
 {:#conclusion}
 
+In this paper, we introduce Shortest Traversal Length Ratio Metric to facilitate the measurement of marginal algorithmic performance of link priortiziation algorithms for LTQP.
+Furthermore, the metric directly indicates how far from optimal the measured approach is, guiding future work for LTQP optimization.
+
+In its current definition and implementations there are some limitations.
+First, due to the computational complexity of the steiner tree problem for graphs and lack of readily available exact solvers that work on directed graphs, our implemtentation uses heuristics, thus leading to potentially suboptimal traversal path lengths.
+Second, when a query produces no results, either due to timeout or no results existing to the query, the metric can not be computed. 
+Especially for queries that time out, this complicates measuring the performance of link prioritization.
+Finally, our metric uses theoretically optimal paths. 
+In practise some documents might take longer to dereference than others, leading to the theoretically optimal path being sub-optimal in practise.
+
+In future work, more extensive testing of the metric is required to validate its effectiveness in measuring prioritization performance. Furthermore, a  new metric that includes a form of penalty term for HTTP request time would account for real-world uncertainties in LTQP scenarios. Finally, an shortest traversal length ratio metric for the first $$ k $$ results can be defined.
+
+<!-- <span class="comment" data-author="RE"> Mention limitations: heuristic solver, needs results to compute the metric, in practise with differing HTTP request times, the path might actually not be optimal. Maybe more links but faster to dereference is faster</span>
 <del class="comment" data-author="RV">
 In this paper, we introduced a preliminary, implementation-independent metric to measure the algorithmic performance of link prioritization algorithms during LTQP. 
-Early results show that while depth-first traversal outperforms breadth-first traversal algorithmically, this difference is not reflected in execution time. 
+Early results show that while depth-first prioritization outperforms breadth-first prioritization algorithmically, this difference is not reflected in execution time. 
 </del>
 <span class="comment" data-author="RV">We don't need a summary in a short paper.</span>
 
 <del class="comment" data-author="RV">
-This supports the hypothesis that SolidBench Discover queries are unlikely to benefit from traversal strategy improvements [](cite:cites eschauzier2023does).
+This supports the hypothesis that SolidBench Discover queries are unlikely to benefit from link prioritization improvements [](cite:cites eschauzier2023does).
 </del>
 <div class="comment" data-author="RV" markdown=1>
 Nooooo this is a capital sin. We cannot do this. This is a fatal scientific flaw that would justify rejecting the paper. We have our argumentation structure wrong!
@@ -77,7 +90,7 @@ To improve the metric, we plan several extensions.
 First, we will include a metric <span class="comment" data-author="RT">But this would not be an extension to the metric, but a new metric, right?</span> for the first $$ k $$ results, defined as the ratio between the length of the path the engine takes to dereference the documents for $$ k $$ results and the optimal path to dereference $$ k $$ results. 
 This is challenging because computing the optimal path for $$ k $$ results requires solving Steiner trees for all combinations of size $$ k $$ out of $$ n $$, where $$ n $$ is the total number of results.
 Second, we will incorporate a penalty term for documents with long HTTP request times to account for real-world uncertainties in LTQP scenarios. 
-Finally, we will conduct more extensive benchmarks and provide reusable tools to reproduce and utilize the introduced metrics.
+Finally, we will conduct more extensive benchmarks and provide reusable tools to reproduce and utilize the introduced metrics. -->
 
 <div style="page-break-after: always; visibility: hidden"> 
 \pagebreak 
