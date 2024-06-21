@@ -15,10 +15,10 @@ Currently, the literature on performance measures is insufficient.
 This falls short when comparing different engine implementations and environments, as actual prioritization-related performance changes are obscured by these unrelated differences that may skew results: 
 
 Programming Languages
-: Different languages can substantially affect engine [performance](cite:cites fourment2008comparison), hindering pure time-based comparisons of algorithms.
+: Different languages can substantially affect engine [performance](cite:cites fourment2008comparison), hindering purely time-based comparisons of algorithms.
 
 Dereferencing Overhead
-: Network times [vary widely](cite:cites christiansen2000tuning, kobayashi2002analysis), introducing significant noise into execution times, even for comparisons of the same engine.
+: Network communication times [vary widely](cite:cites christiansen2000tuning, kobayashi2002analysis), introducing significant noise into execution times, even for comparisons of the same engine.
 
 Orthogonal Optimization Strategies
 : Different [query optimization](cite:cites hartig2011zero) strategies might create differences in performance independent of prioritization strategies. 
