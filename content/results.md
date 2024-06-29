@@ -4,8 +4,7 @@
 Our experiment uses the Discover queries from the [SolidBench benchmark](cite:cites taelman2023link).
 To track the required information for computing the metric during query execution, we use the query engine [Comunica](cite:cites taelman2018comunica).
 To compute the optimal path, we will use a [heuristic Steiner tree solver](cite:cites watel2016practical) to speed up computations. 
-Although an exact solver would be ideal, it significantly increases computational complexity for large subwebs [](cite:cites hwang1992steiner, lucas2014ising). 
-We provide an implementation of $$ R^{3} $$ on [github](https://github.com/RubenEschauzier/metric-link-prioritisation-performance/tree/master).
+Although an exact solver would be ideal, it significantly increases computational complexity for large subwebs [](cite:cites hwang1992steiner, lucas2014ising).
 
 Our experiments compare [depth and breadth-first prioritization](cite:cites hartig2016walking) using $$ R^{3} $$ and time until the final query result.
 We aim to validate the substantiated assumption that Discover queries do not benefit from improved link prioritization [](cite:cites eschauzier2023does).
