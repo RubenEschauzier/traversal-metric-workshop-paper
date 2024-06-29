@@ -1,17 +1,18 @@
 ## Conclusion
 {:#conclusion}
-
-In this paper, we introduce the Shortest Traversal Length Ratio metric to facilitate the measurement of marginal algorithmic performance of link prioritization algorithms for LTQP.
-Furthermore, the metric directly indicates how far from optimal the measured approach is, guiding future work for LTQP optimization.
-
-In its current definition and implementations, there are some limitations.
-First, due to the computational complexity of the Steiner tree problem for graphs and the lack of readily available exact solvers that work on directed graphs, our implementations uses heuristics, thus leading to potentially suboptimal traversal path lengths.
-Second, when a query produces no results, either due to timeout or no results existing for the query, the metric can not be computed. 
-Especially for queries that time out, this complicates measuring the performance of link prioritization.
+<!-- Maybe cut this part -->
+The current definition and implementation of the Relevant Retrieval Ratio ($$ R^{3} $$) has several limitations.
+First, due to the computational complexity of the Steiner tree problem for graphs and the lack of readily available exact solvers that work on directed graphs, our implementations use heuristics, thus leading to potentially suboptimal traversal path lengths.
+Second, the metric can not be computed when a query produces no results, either due to timeout or no results existing for the query.
 Finally, our metric uses theoretically optimal paths. 
-In practice some documents might take longer to dereference than others, leading to the theoretically optimal path being sub-optimal in practice.
+In practice, document dereference times can vary, making the theoretically optimal path potentially suboptimal.
 
-In future work, more extensive benchmarking of the metric is required to validate its effectiveness in measuring prioritization performance. Furthermore, a new metric that includes a penalty term for HTTP request time would account for real-world uncertainties in LTQP scenarios. Finally, a shortest traversal length ratio metric for the first $$ k $$ results can be defined.
+In future work, more extensive benchmarking of the metric is required to validate its effectiveness in measuring prioritization performance. Furthermore, a new metric that includes a penalty term for HTTP request time would account for real-world uncertainties in LTQP scenarios. Finally, an $$ R^3 $$ metric for the first $$ k $$ results can be defined.
+
+
+### Acknowledgements
+This research was supported by SolidLab Vlaanderen (Flemish Government, EWI and RRF project VV023/10).
+Ruben Taelman is a postdoctoral researcher at the Research Foundation – Flanders (FWO).
 
 <!-- <span class="comment" data-author="RE"> Mention limitations: heuristic solver, needs results to compute the metric, in practise with differing HTTP request times, the path might actually not be optimal. Maybe more links but faster to dereference is faster</span>
 <del class="comment" data-author="RV">
@@ -92,6 +93,6 @@ This is challenging because computing the optimal path for $$ k $$ results requi
 Second, we will incorporate a penalty term for documents with long HTTP request times to account for real-world uncertainties in LTQP scenarios. 
 Finally, we will conduct more extensive benchmarks and provide reusable tools to reproduce and utilize the introduced metrics. -->
 
-<div style="page-break-after: always; visibility: hidden"> 
+<!-- <div style="page-break-after: always; visibility: hidden"> 
 \pagebreak 
-</div>
+</div> -->
