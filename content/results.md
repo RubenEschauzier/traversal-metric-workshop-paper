@@ -15,7 +15,7 @@ Furthermore, there is a significant difference in performance depending on the t
 Some pods store query-relevant data in a single file, while others fragment these into directories, complicating optimal traversal.
 
 The differences in prioritization performance are not observed in time until the last result; the Pearson correlation coefficients between $$ R^{3} $$ and time until the last result are -0.042 and 0.201 for depth and breadth-first respectively. 
-These low correlations suggest a weak link between $$ R^{3} $$ and query execution time, possibly indicating noise in execution time.
+These low correlations suggest a weak link between $$ R^{3} $$ and query execution time, possibly caused by noise in execution time.
 
 Using the $$ R^{3} $$, we confirm our previous [paper](cite:cites eschauzier2023does) by computing a metric value instead of an engine-specific in-depth analysis of the query execution progress.
 
