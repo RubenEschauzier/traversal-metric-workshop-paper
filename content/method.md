@@ -22,4 +22,4 @@ $$
 where $$ |T_{E}| $$ is the length of the engine traversal path and $$ |T_{O}| $$ is the length of the optimal path. 
 In this definition, a higher value is better, with $$ R^{3} = 1 $$ indicating optimal algorithmic link prioritization performance.
 Note that when $$ |T_{O}| = 0 $$ or $$ |T_{E}| = 0 $$, our query has no results and the notion of optimal link prioritization does not exist.
-As differences in the metric's values get smaller when an engine performs worse, taking, for example, the log2 can help visualize value differences
+As differences in the metric's values get smaller when an engine performs worse, taking, the log2 can help visualize relative differences.
