@@ -74,123 +74,124 @@ caption {
 <table>
   <thead>
     <tr style="text-align: right;">
-      <th></th>
-      <th>depth-first</th>
-      <th>breadth-first</th>
-      <th>Difference in log<sub>2</sub> (R<sup>3</sup>)</th>
-    <th></th>
-      <th>depth-first</th>
-      <th>breadth-first</th>
-      <th>Difference in log<sub>2</sub> (R<sup>3</sup>)</th>
-    </tr>
-    <tr>
       <th>Query</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    <th>Query</th>
-          <th></th>
-      <th></th>
-      <th></th>
+      <th>DF</th>
+      <th>BF</th>
+      <th>&Delta; log<sub>2</sub> (R<sup>3</sup>)</th>
+    <th></th>
+      <th>Query</th>
+      <th>DF</th>
+      <th>BF</th>
+      <th>&Delta; log<sub>2</sub> (R<sup>3</sup>)</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th style="border-bottom: 0">D1.0</th>
+      <td> <b>D1.0</b> </td>
       <td>0.23</td>
       <td>0.08</td>
       <td>1.617</td>
-      <th style="border-bottom: 0">D5.0</th>
+      <td></td>
+      <td> <b>D5.0</b> </td>
       <td>0.13</td>
       <td>0.15</td>
       <td>-0.134</td>
     </tr>
     <tr>
-      <th style="border-bottom: 0">D1.1</th>
+      <td> <b>D1.1</b> </td>
       <td>0.50</td>
       <td>0.50</td>
       <td>0.000</td>
-      <th style="border-bottom: 0">D5.1</th>
+      <td> </td>
+      <td> <b>D5.1</b> </td>
       <td>0.50</td>
       <td>0.50</td>
       <td>0.000</td>
     </tr>
     <tr>
-      <th style="border-bottom: 0">D1.2</th>
+      <td> <b>D1.2</b> </td>
       <td>0.50</td>
       <td>0.50</td>
       <td>0.000</td>
-      <th style="border-bottom: 0">D5.2</th>
+      <td> </td>
+      <td> <b>D5.2</b> </td>
       <td>0.33</td>
       <td>0.67</td>
       <td>-1.000</td>
     </tr>
     <tr>
-      <th style="border-bottom: 0">D1.3</th>
+      <td > <b>D1.3</b> </td>
       <td>0.75</td>
       <td>0.75</td>
       <td>0.000</td>
-      <th style="border-bottom: 0">D5.3</th>
+      <td> </td>
+      <td> <b>D5.3</b> </td>
       <td>0.04</td>
       <td>0.03</td>
       <td>0.250</td>
     </tr>
     <tr>
-      <th style="border-bottom: 0">D1.4</th>
+      <td > <b>D1.4</b> </td>
       <td>0.18</td>
       <td>0.18</td>
       <td>0.000</td>
-      <th style="border-bottom: 0">D5.4</th>
+      <td> </td>
+      <td> <b>D5.4</b> </td>
       <td>0.18</td>
       <td>0.16</td>
       <td>0.196</td>
     </tr>
     <tr style="border-top: 1px solid !important">
-      <th style="border-bottom: 0">D2.0</th>
+      <td > <b>D2.0</b> </td>
       <td>0.50</td>
       <td>0.51</td>
       <td>-0.031</td>
-      <th style="border-bottom: 0">D6.0</th>
+      <td> </td>
+      <td> <b>D6.0</b> </td>
       <td>0.53</td>
       <td>0.53</td>
       <td>0.000</td>
     </tr>
     <tr>
-      <th style="border-bottom: 0">D2.1</th>
+      <td > <b>D2.1</b> </td>
       <td>0.50</td>
       <td>0.67</td>
       <td>-0.415</td>
-      <th style="border-bottom: 0">D6.1</th>
+      <td> </td>
+      <td> <b>D6.1</b> </td>
       <td>0.40</td>
       <td>0.40</td>
       <td>0.000</td>
     </tr>
     <tr>
-      <th style="border-bottom: 0">D2.2</th>
+      <td > <b>D2.2</b> </td>
       <td>0.50</td>
       <td>0.67</td>
       <td>-0.415</td>
-      <th style="border-bottom: 0">D6.2</th>
+      <td> </td>
+      <td> <b>D6.2</b> </td>
       <td>0.40</td>
       <td>0.40</td>
       <td>0.000</td>
     </tr>
     <tr>
-      <th style="border-bottom: 0">D2.3</th>
+      <td > <b>D2.3</b> </td>
       <td>0.90</td>
       <td>0.90</td>
       <td>0.000</td>
-      <th style="border-bottom: 0">D6.3</th>
+      <td> </td>
+      <td> <b>D6.3</b> </td>
       <td>0.13</td>
       <td>0.13</td>
       <td>0.000</td>
     </tr>
     <tr>
-      <th style="border-bottom: 0">D2.4</th>
+      <td > <b>D2.4</b> </td>
       <td>0.44</td>
       <td>0.56</td>
       <td>-0.349</td>
-      <th style="border-bottom: 0">D6.4</th>
+      <td> </td>
+      <td> <b>D6.4</b> </td>
       <td>0.73</td>
       <td>0.46</td>
       <td>0.690</td>
@@ -198,101 +199,111 @@ caption {
         <tr>
     </tr>
     <tr style="border-top: 1px solid">
-      <th style="border-bottom: 0">D3.0</th>
+      <td > <b>D3.0</b> </td>
       <td>0.50</td>
       <td>0.48</td>
       <td>0.074</td>
-      <th style="border-bottom: 0">D7.0</th>
+      <td> </td>
+      <td> <b>D7.0</b> </td>
       <td>0.05</td>
       <td>0.05</td>
       <td>0.000</td>
     </tr>
     <tr>
-      <th style="border-bottom: 0">D3.1</th>
+      <td > <b>D3.1</b> </td>
       <td>0.91</td>
       <td>0.95</td>
       <td>-0.058</td>
-      <th style="border-bottom: 0">D7.1</th>
+      <td> </td>
+      <td> <b>D7.1</b> </td>
       <td>0.40</td>
       <td>0.40</td>
       <td>0.000</td>
     </tr>
     <tr>
-      <th style="border-bottom: 0">D3.2</th>
+      <td > <b>D3.2</b> </td>
       <td>0.93</td>
       <td>0.93</td>
       <td>-0.000</td>
-      <th style="border-bottom: 0">D7.2</th>
+      <td> </td>
+      <td> <b>D7.2</b> </td>
       <td>0.40</td>
       <td>0.40</td>
       <td>0.000</td>
     </tr>
     <tr>
-      <th style="border-bottom: 0">D3.3</th>
+      <td > <b>D3.3</b> </td>
       <td>0.62</td>
       <td>0.62</td>
       <td>0.000</td>
-      <th style="border-bottom: 0">D7.3</th>
+      <td> </td>
+      <td> <b>D7.3</b> </td>
       <td>0.15</td>
       <td>0.15</td>
       <td>0.000</td>
     </tr>
     <tr>
-      <th style="border-bottom: 0">D3.4</th>
+      <td > <b>D3.4</b> </td>
       <td>0.61</td>
       <td>0.61</td>
       <td>0.000</td>
-      <th style="border-bottom: 0">D7.4</th>
+      <td> </td>
+      <td> <b>D7.4</b> </td>
       <td>0.06</td>
       <td>0.03</td>
       <td>0.955</td>
     </tr>
     <tr style="border-top: 1px solid">
-      <th style="border-bottom: 0">D4.0</th>
+      <td > <b>D4.0</b> </td>
       <td>0.09</td>
       <td>0.06</td>
       <td>0.520</td>
-      <th style="border-bottom: 0">D8.0</th>
+      <td> </td>
+      <td> <b>D8.0</b> </td>
       <td>0.45</td>
       <td>0.64</td>
       <td>-0.500</td>
     </tr>
     <tr>
-      <th style="border-bottom: 0">D4.1</th>
+      <td > <b>D4.1</b> </td>
       <td>0.44</td>
       <td>0.44</td>
       <td>0.000</td>
-      <th style="border-bottom: 0">D8.1</th>
+      <td> </td>
+      <td> <b>D8.1</b> </td>
       <td>-</td>
       <td>-</td>
       <td>-</td>
     </tr>
     <tr>
-      <th style="border-bottom: 0">D4.2</th>
+      <td > <b>D4.2</b> </td>
       <td>0.50</td>
       <td>0.44</td>
       <td>0.170</td>
-      <th style="border-bottom: 0">D8.2</th>
+      <td> </td>
+      <td> <b>D8.2</b> </td>
       <td>0.47</td>
       <td>1.00</td>
       <td>-1.100</td>
     </tr>
     <tr>
-      <th style="border-bottom: 0">D4.3</th>
+      <td > <b>D4.3</b> </td>
       <td>0.03</td>
       <td>0.03</td>
       <td>0.000</td>
-      <th style="border-bottom: 0">D8.3</th>
+      <td> </td>
+      <td> <b>D8.3</b> </td>
       <td>-</td>
       <td>-</td>
       <td>-</td>
     </tr>
     <tr>
-      <th style="border-bottom: 0">D4.4</th>
+      <td > <b>D4.4</b> </td>
       <td>0.11</td>
       <td>0.11</td>
       <td>0.000</td>
-      <th style="border-bottom: 0">D8.4</th>
+      <td> </td>
+      <td> <b>D8.4</b> </td>
       <td>0.36</td>
       <td>0.43</td>
       <td>-0.263</td>
@@ -301,7 +312,7 @@ caption {
 </table>
 
 <figcaption markdown="block">
-The calculated Relevant Retrieval Ratios for depth and breadth-first prioritization are separated by query template and instantiation. In this table, for example,**D1.2** denotes the second instantiation of Discover query template 1, and <q>-</q> indicates a query timeout. The difference column is calculated by subtracting the breadth-first log<sub>2</sub> (R<sup>3</sup>) from depth-first. Thus, a positive value indicates depth-first outperforms breadth-first.
+The $$ R^{3} $$ for depth and breadth-first prioritization (DF, BF) separated by query template and instantiation. **D1.2** template one, instantiation two.
 </figcaption>
 
 </figure>

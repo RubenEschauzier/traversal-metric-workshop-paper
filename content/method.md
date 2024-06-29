@@ -1,7 +1,5 @@
 ## Relevant Retrieval Ratio
 {:#Method}
-In this section, we will introduce the Relevant Retrieval Ratio  ($$ R^{3} $$), and its components, and discuss what information query engines should track for its computation.
-
 During LTQP query execution, there exists an optimal order in which links should be dereferenced to find all documents needed to answer a query. 
 This theoretical optimum can be considered an oracle link prioritization algorithm with perfect information on the location of query-relevant documents.
 In theory, this optimal path can always be achieved, as the oracle only uses links between documents that an engine could also use.
@@ -23,9 +21,5 @@ $$
 
 where $$ |T_{E}| $$ is the length of the engine traversal path and $$ |T_{O}| $$ is the length of the optimal path. 
 In this definition, a higher value is better, with $$ R^{3} = 1 $$ indicating optimal algorithmic link prioritization performance.
-Note that when $$ |T_{O}| = 0 $$, our query has no results and the notion of optimal link prioritization does not exist.
-Similarly, when $$ |T_{E}| = 0 $$, the engine has not dereferenced any links, indicating incomplete results or a query with an empty result set. 
-As differences in the metric's values get smaller when an engine performs worse, taking, for example, the log<sub>2</sub> can help visualize differences for small values of the metric. 
-
-To compute the metric, we first track the traversed topology of the queried web as a directed graph. Furthermore, for each query, we compute the minimal set of documents required to produce the query result. 
-Finally, the engine's traversal path must be tracked, either within the engine or by recording the HTTP requests made by the engine.
+Note that when $$ |T_{O}| = 0 $$ or $$ |T_{E}| = 0 $$, our query has no results and the notion of optimal link prioritization does not exist.
+As differences in the metric's values get smaller when an engine performs worse, taking, for example, the log<sub>2</sub> can help visualize value differences
