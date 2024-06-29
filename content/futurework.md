@@ -6,7 +6,6 @@ First, due to the computational complexity of the Steiner tree problem for graph
 Second, the metric can not be computed when a query produces no results, either due to timeout or no results existing for the query.
 Finally, our metric uses theoretically optimal paths. 
 In practice, document dereference times can vary, making the theoretically optimal path potentially suboptimal.
-
 In future work, more extensive benchmarking of the metric is required to validate its effectiveness in measuring prioritization performance. Furthermore, a new metric that includes a penalty term for HTTP request time would account for real-world uncertainties in LTQP scenarios. Finally, an $$ R^3 $$ metric for the first $$ k $$ results can be defined.
 
 

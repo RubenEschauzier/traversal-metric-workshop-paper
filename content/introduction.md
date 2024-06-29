@@ -11,7 +11,6 @@ However, LTQP is currently slower compared to centralized alternatives.
 An optimization avenue is link prioritization, where the engine dynamically determines the order in which links should be dereferenced based on their expected relevance to the query [](cite:cites taelman2023link, hartig2016walking).
 To optimize LTQP prioritization strategies, researchers need insights into the marginal performance of proposed algorithms and the theoretically optimal performance these strategies can achieve.
 
-Existing literature on performance measures is insufficient. 
 Previous studies have used metrics like result arrival times, total execution time, and other [arrival time-based metrics](cite:cites acosta2017diefficiency) to assess prioritization strategies [](cite:cites taelman2023link, hartig2016walking, hanskiobservations).
 These measures fail to capture how close implemented prioritization approaches are to the theoretically optimal strategy. 
 Additionally, these metrics fall short when comparing different engine implementations and environments due to unrelated differences that may skew link prioritization performance results:
@@ -26,11 +25,7 @@ Dereferencing Overhead
 Orthogonal Optimization Strategies
 : Different [query optimization](cite:cites hartig2011zero) strategies might create differences in performance independent of prioritization strategies. 
 
-This leads to our research questions:
-
--  _How can we compare the marginal algorithmic performance of prioritization algorithms in an implementation-agnostic manner_?
-
-- _How can we define an Oracle baseline that represents optimal prioritization performance?_
+This leads to our research questions: _How can we compare the marginal algorithmic performance of prioritization algorithms in an implementation-agnostic manner_ and _How can we define an Oracle baseline that represents optimal prioritization performance?_
 
 In this paper, we introduce the metric: Relevant Retrieval Ratio (R^3), pronounced r-cubed. 
 This metric allows for straightforward observation of the algorithmic performance of prioritization approaches, independent of implementations, and provides a benchmark against the theoretically optimal prioritization strategy.

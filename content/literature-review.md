@@ -3,7 +3,7 @@
 Existing LTQP metrics are insufficient for measuring the marginal algorithmic performance of link prioritization algorithms:
 
 Query execution time
-: Prioritization algorithms are unlikely to improve total query execution time, as completing a query requires dereferencing all documents, and prioritization algorithms do not prune links [](cite:cites hartig2016walking). However, Link prioritization can [improve](cite:cites taelman2023link, hartig2016walking) arrival times of the first $$ k $$ results by quickly dereferencing the data needed to answer a query, these results can then be streamed to clients. However, the arrival times are influenced by both prioritization strategies and other unrelated engine optimizations obscuring the prioritization algorithm's effect.
+: Prioritization algorithms are unlikely to improve total query execution time [](cite:cites hartig2016walking, taelman2023link). However, Link prioritization can [improve](cite:cites taelman2023link, hartig2016walking) arrival times of the first $$ k $$ results. However, the arrival times are influenced by both prioritization strategies and other unrelated engine optimizations obscuring the prioritization algorithm's effect.
 
 Diefficiency Metrics
 : Diefficiency metrics measure the continuous efficiency of query engines by reflecting the density of produced results over a given time interval [](cite:cites acosta2017diefficiency). This is in contrast to measuring the first $$ k $$ arrival times, which only measures engine performance at discrete points. However, as these metrics are based on result arrival times, the same limitations remain.

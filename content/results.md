@@ -10,10 +10,10 @@ We provide an implementation of $$ R^{3} $$ on [github](https://github.com/Ruben
 Our experiments compare [depth and breadth-first prioritization](cite:cites hartig2016walking) using $$ R^{3} $$ and time until the final query result.
 We aim to validate the substantiated assumption that Discover queries do not benefit from improved link prioritization [](cite:cites eschauzier2023does).
 
-[](#metric-results) shows the computed metrics per template instantiation and the difference in the log<sub>2</sub> of the metric value. 
+[](#metric-results) shows the computed metrics per template instantiation and the difference in the log2 of the metric value. 
 We find that either method can outperform the other based on the used template.
 Furthermore, there is a significant difference in performance depending on the template instantiation, likely due to the different fragmentation strategies used in [SolidBench](cite:cites taelman2023link).
-Some pods store all query-relevant data in a single file, while others fragment these into multiple directories, complicating optimal traversal.
+Some pods store query-relevant data in a single file, while others fragment these into directories, complicating optimal traversal.
 
 The differences in prioritization performance are not observed in time until the last result; the Pearson correlation coefficients between $$ R^{3} $$ and time until the last result are -0.042 and 0.201 for depth and breadth-first respectively. 
 These low correlations suggest a weak link between $$ R^{3} $$ and query execution time, possibly indicating noise in execution time.

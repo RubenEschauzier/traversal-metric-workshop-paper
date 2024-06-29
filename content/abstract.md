@@ -2,7 +2,6 @@
 <!-- Context      -->
 The decentralization envisioned for the current centralized web requires querying approaches capable of accessing multiple small data sources while complying with legal constraints related to personal data, such as licenses and the GDPR.
 Link Traversal-based Query Processing (LTQP) is a querying approach designed for highly decentralized environments that satisfies these legal requirements.
-During LTQP, engines execute queries without prior knowledge of the data, by dynamically discovering data sources.
 An important optimization avenue in LTQP is the order in which links are dereferenced, which involves prioritizing links to query-relevant documents. 
 <!-- Need         -->
 However, assessing and comparing the algorithmic performance of these systems is challenging due to various compounding factors during query execution. 
