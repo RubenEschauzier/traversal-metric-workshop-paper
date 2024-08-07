@@ -12,6 +12,6 @@ In this paper, we motivate the need for accurately measuring link prioritization
 <!-- Findings     -->
 Our findings show that the proposed metric highlights differences in link prioritization performance depending on the queried data fragmentation strategy.
 <!-- Conclusion   -->
-The proposed metric allows evaluating link prioritization performance
+The proposed metric allows for evaluating link prioritization performance
 <!-- Perspectives -->
 and enables easily assessing the effectiveness of future link prioritization algorithms.
