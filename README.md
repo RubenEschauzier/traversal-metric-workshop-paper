@@ -1,4 +1,4 @@
-# My Scholarly Article
+# The R3 Metric: Measuring Performance of Link Prioritization during Traversal-based Query Processing
 
 ## Development mode
 ```
