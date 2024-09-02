@@ -1,5 +1,7 @@
 # The R3 Metric: Measuring Performance of Link Prioritization during Traversal-based Query Processing
 
+Workshop paper for [AMW 2024](https://amw2024.github.io/)
+
 ## Development mode
 ```
 bundle install
