@@ -15,3 +15,14 @@ Our findings show that the proposed metric highlights differences in link priori
 The proposed metric allows for evaluating link prioritization performance
 <!-- Perspectives -->
 and enables easily assessing the effectiveness of future link prioritization algorithms.
+
+
+<span class="printonly firstpagefooter">
+<span class="firstpagefootertop">&nbsp;</span>
+<span class="footnotecopyright">
+<span style="font-style:italic">AMW 2024: 16th Alberto Mendelzon International Workshop on Foundations of Data Management, September 30th--October 4th, 2024, Mexico City, Mexico</span><br />
+<img src="img/mail.png" width="12px" /> ruben.eschauzier@ugent.be (R. Eschauzier); <img src="img/mail.png" width="12px" /> ruben.taelman@ugent.be (R. Taelman); <img src="img/mail.png" width="12px" /> ruben.verborgh@ugent.be (R. Verborgh)<br />
+<img src="img/cc-by.png" width="50px" /><span style="font-size: 0.75em">© 2024 Copyright for this paper by its authors. Use permitted under Creative Commons License Attribution 4.0 International (CC BY 4.0).</span><br />
+<img src="img/ceur-ws-logo.png" width="50px" />CEUR Workshop Proceedings (<a href="https://CEUR-WS.org">CEUR-WS.org</a>)<br />
+</span>
+</span>

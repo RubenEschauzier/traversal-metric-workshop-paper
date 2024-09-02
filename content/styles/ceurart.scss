@@ -158,13 +158,17 @@ hyphens:none;
   right: 0;
   bottom: 0;
   left: 0;
-  width: 48%;
+  width: 90%;
+}
+
+.firstpagefootertop {
+  line-height: 0.1em;
+  display: block;
+  width: 45%;
+  border-top: 1px solid black;
 }
 
 .footnotecopyright {
-  border-top: 1px solid black;
-  padding-top: 3px;
-  display: block;
   line-height:1.1em;
   font-size:0.8em;
 }
